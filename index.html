@@ -1,181 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Charansai Maddineni | Web Developer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <title>Charansai Maddineni | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #f4f7fb;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
       line-height: 1.6;
-    }
-
-    header {
-      background: #0d1b2a;
-      color: #fff;
       padding: 2rem;
-      text-align: center;
     }
-
+    header, footer {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
     header h1 {
       font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
-
-    header p a {
-      color: #fff;
-      text-decoration: underline;
+    header p {
+      color: #38bdf8;
     }
-
-    section {
-      padding: 2rem;
-      max-width: 960px;
-      margin: auto;
+    .links a {
+      margin: 0 1rem;
+      color: #facc15;
+      text-decoration: none;
+      font-weight: 500;
     }
-
-    .card {
-      background: #fff;
+    .section {
+      margin-bottom: 3rem;
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 0.25rem;
+    }
+    .project {
+      background: #1e293b;
+      border-radius: 0.5rem;
       padding: 1.5rem;
       margin-bottom: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-
-    h2 {
-      margin-bottom: 1rem;
-      color: #0d1b2a;
+    .project h3 {
+      color: #facc15;
     }
-
-    ul {
-      padding-left: 1.25rem;
+    .tech {
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #94a3b8;
     }
-
-    footer {
-      background: #0d1b2a;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #e0e0e0;
-      padding: 4px 8px;
-      margin: 2px;
-      border-radius: 4px;
-      font-size: 0.85rem;
-    }
-
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 1rem;
     }
-
-    .testimonial {
-      font-style: italic;
-      margin: 1rem 0;
-      padding-left: 1rem;
-      border-left: 4px solid #ccc;
+    .skill-box {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #94a3b8;
     }
   </style>
 </head>
-
 <body>
   <header>
     <h1>Charansai Maddineni</h1>
-    <p>
-      <a href="mailto:charansaimaddineni@gmail.com">charansaimaddineni@gmail.com</a> |
-      <a href="https://www.linkedin.com/in/charansai1999" target="_blank">LinkedIn</a> |
+    <p>Web Developer Portfolio</p>
+    <div class="links">
+      <a href="mailto:charansaimaddineni@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/charansai1999" target="_blank">LinkedIn</a>
       <a href="https://github.com/charansai1999" target="_blank">GitHub</a>
-    </p>
+    </div>
   </header>
 
-  <section>
+  <section class="section">
     <h2>Featured Projects</h2>
-    <div class="card">
+
+    <div class="project">
       <h3>Purdue University — Web & Digital Experience Redesign</h3>
-      <p><strong>Role:</strong> Web Developer | <strong>Tech Stack:</strong> WordPress, HTML5, CSS3, JS, GA4, GTM, WCAG 2.1</p>
+      <p class="tech">WordPress, HTML5, CSS3, GA4, WCAG 2.1</p>
       <ul>
-        <li>Improved engagement 70% via redesign of Student Life site</li>
-        <li>Launched AI chatbot, integrated GA4 + GTM</li>
-        <li>Built responsive, accessible interfaces (WCAG 2.1)</li>
+        <li>Redesigned Student Life site; boosted engagement by 70%</li>
+        <li>Launched AI chatbot & GA4 integration</li>
+        <li>Built WCAG 2.1 accessible responsive components</li>
       </ul>
     </div>
 
-    <div class="card">
+    <div class="project">
       <h3>Deloitte — Mutual Fund Platform Front-End</h3>
-      <p><strong>Role:</strong> Software Engineer | <strong>Tech Stack:</strong> ReactJS, TypeScript, SCSS, Node.js</p>
+      <p class="tech">ReactJS, TypeScript, SCSS, Node.js</p>
       <ul>
-        <li>Developed reusable components</li>
-        <li>Ensured cross-browser compatibility and performance</li>
+        <li>Built scalable reusable components</li>
+        <li>Optimized UX and ensured cross-browser responsiveness</li>
       </ul>
     </div>
 
-    <div class="card">
-      <h3>Baldwin Risk Partners — Intelligent Risk Analysis Tool</h3>
-      <p><strong>Role:</strong> AI/ML Developer | <strong>Tech Stack:</strong> Python, Flask, Scikit-learn, Docker, AWS</p>
+    <div class="project">
+      <h3>Baldwin Risk Partners — Risk Analysis Tool</h3>
+      <p class="tech">Python, Flask, AWS, Scikit-learn</p>
       <ul>
-        <li>Built NLP models for risk analysis</li>
-        <li>Integrated with AWS Lambda for scalability</li>
+        <li>Built real-time NLP models for risk assessment</li>
+        <li>Integrated AWS Lambda for serverless scalability</li>
       </ul>
     </div>
 
-    <div class="card">
-      <h3>IU Health — Data Automation & Backend Optimization</h3>
-      <p><strong>Role:</strong> Backend Developer | <strong>Tech Stack:</strong> Spring Boot, AWS S3, SQL Server</p>
+    <div class="project">
+      <h3>IU Health — Backend Automation & Dashboards</h3>
+      <p class="tech">Spring Boot, SQL Server, AWS</p>
       <ul>
-        <li>Automated data pipelines (35% latency reduction)</li>
-        <li>Created dashboards for internal teams</li>
+        <li>Optimized pipelines reducing latency by 35%</li>
+        <li>Created dashboards for internal healthcare teams</li>
       </ul>
     </div>
   </section>
 
-  <section>
+  <section class="section">
     <h2>Skills Summary</h2>
     <div class="skills-grid">
-      <div>
-        <strong>Front-End:</strong>
-        <div class="tag">React</div><div class="tag">TypeScript</div><div class="tag">Tailwind</div><div class="tag">HTML5</div>
-      </div>
-      <div>
-        <strong>CMS:</strong>
-        <div class="tag">WordPress</div><div class="tag">Drupal</div>
-      </div>
-      <div>
-        <strong>Accessibility:</strong>
-        <div class="tag">WCAG 2.1 AA</div><div class="tag">axe</div><div class="tag">WAVE</div>
-      </div>
-      <div>
-        <strong>Back-End:</strong>
-        <div class="tag">Python</div><div class="tag">Java</div><div class="tag">Spring Boot</div><div class="tag">Node.js</div>
-      </div>
-      <div>
-        <strong>Tools:</strong>
-        <div class="tag">Git</div><div class="tag">Docker</div><div class="tag">GA4</div><div class="tag">GTM</div><div class="tag">Jenkins</div>
-      </div>
+      <div class="skill-box"><strong>Front-End</strong><br />React, HTML5, Tailwind, TypeScript</div>
+      <div class="skill-box"><strong>Back-End</strong><br />Node.js, Java, Spring Boot, Python</div>
+      <div class="skill-box"><strong>CMS</strong><br />WordPress, Drupal</div>
+      <div class="skill-box"><strong>Accessibility</strong><br />WCAG 2.1 AA, axe, WAVE</div>
+      <div class="skill-box"><strong>Tools</strong><br />Git, Docker, GA4, GTM</div>
     </div>
   </section>
 
-  <section>
+  <section class="section">
     <h2>Testimonials</h2>
-    <p class="testimonial">"Charansai has the rare ability to merge strong coding skills with real UX insight. His contributions helped us elevate the entire digital presence at Purdue." — <strong>Supervisor, Purdue University</strong></p>
-    <p class="testimonial">"One of the best front-end engineers we’ve contracted. His discipline navigating complex environments was impressive." — <strong>Tech Lead, Deloitte</strong></p>
+    <p><em>"Charansai has the rare ability to merge strong coding skills with real UX insight. His contributions helped us elevate the entire digital presence at Purdue."</em><br />— Supervisor, Purdue University</p>
+    <p><em>"One of the best front-end engineers we've contracted. His discipline navigating complex environments was impressive."</em><br />— Tech Lead, Deloitte</p>
   </section>
 
   <footer>
-    <p>Let’s Collaborate — Reach out at <a href="mailto:charansaimaddineni@gmail.com">charansaimaddineni@gmail.com</a></p>
+    <p>Let's collaborate — <a href="mailto:charansaimaddineni@gmail.com">charansaimaddineni@gmail.com</a></p>
+    <p>&copy; 2025 Charansai Maddineni</p>
   </footer>
 </body>
-
 </html>
